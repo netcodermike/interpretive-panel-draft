@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Draft a heritage display panel, preview two sizes, and check the word budget and estimated reading time.">
+  <title>Interpretive Panel Draft</title>
+  <link rel="stylesheet" href="./style.css">
+  <script type="module" src="./app.mjs"></script>
+</head>
+<body>
+<main>
+  <div class="heading">
+    <div><h1>Interpretive Panel Draft</h1><p>Draft a heritage display panel, preview two sizes, and check the word budget and estimated reading time.</p></div>
+    <a href="https://github.com/netcodermike/interpretive-panel-draft">Project source ↗</a>
+  </div>
+  <div class="workspace">
+    <section class="panel stage" aria-label="Project workspace">
+      <article class="draft-panel" id="draft-panel" aria-label="Interpretive panel preview">
+             <h2 id="preview-title"></h2><div class="preview-body" id="preview-body"></div><footer id="preview-caption"></footer>
+           </article><p id="reading" role="status"></p>
+    </section>
+    <section class="panel controls" aria-label="Controls">
+      <form id="panel-form">
+             <label for="headline">Headline<input id="headline" name="headline" maxlength="96" value="A Clock for the Harbor"></label>
+             <label for="body-copy">Panel text<textarea id="body-copy" name="body" rows="6" maxlength="2600">Before anyone could check the tide on a phone, the harbor keeper turned a wheel to mark when the water would reach the steps. People timed their trips by that mark.
+
+Look for the small notch below the dial. It shows where the old handle wore away a corner of the case.</textarea></label>
+             <label for="annotation">Caption<input id="annotation" name="note" maxlength="180" value="Sample label for an imagined harbor exhibit."></label>
+             <div class="pair"><label for="budget">Word budget<input id="budget" name="budget" type="number" min="20" max="500" value="90"></label>
+               <label for="layout">Panel width<select id="layout" name="layout"><option value="wide">Wide</option><option value="narrow">Narrow</option></select></label></div>
+           </form>
+    </section>
+  </div>
+</main>
+</body>
+</html>
